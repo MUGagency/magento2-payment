@@ -11019,7 +11019,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         defaultConfig.payment.sellerId = parseInt(defaultConfig.payment.sellerId);
         defaultConfig.payment.amount = parseFloat(defaultConfig.payment.amount);
         if(defaultConfig.request.host === null) {
-            defaultConfig.request.test = Boolean(defaultConfig.request.test);
+            defaultConfig.request.test = Boolean(defaultConfig.request.test != "0");
             if(defaultConfig.request.test) {
                 defaultConfig.request.host = 'https://ssl.dotpay.pl/test_payment/payment_api/v1/channels/'
             } else {
